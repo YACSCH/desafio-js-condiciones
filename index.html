@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Desafio Condiciones</title>
+        <link rel="stylesheet" href="./assets/css/style.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <section class="image-border">
+                <div id="image-container" class="image-container">
+                    <img id="clickable-image" src="./assets/img/foto.png" alt="Imagen de un Oso Panda que al hacer click muestra/oculta el Border" onclick="ShowBorder()"/>
+                </div>
+            </section>
+            <hr/>
+            <section class="sticker">
+                <table class="table-sticker">
+                    <tr>
+                        <td colspan="3">
+                            <h3>Puede llevar hasta 10 sticker en Total</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="image-stickers" src="./assets/img/css3.png" alt=""/>
+                        </td>
+                        <td>
+                            <img class="image-stickers" src="./assets/img/html5.png" alt=""/>
+                        </td>
+                        <td>
+                            <img class="image-stickers" src="./assets/img/javascript.png" alt=""/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="txtinputcss"/></td>
+                        <td><input type="text" id="txtinputhtml"/></td>
+                        <td><input type="text" id="txtinputjs"/></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p id="result-sticker"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <button id="btn-sticker" class="btn-sticker" onclick="SumAmountStickers()">
+                                Verificar
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <hr/>
+            <section class="password">
+                <h3>Ingresa Password</h3>
+                <section class="select-container">
+                    <select name="cboNumberFirst" id="cboNumberFirst">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                    <select name="cboNumberSecond" id="cboNumberSecond">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                  </select>
+                  <select name="cboNumberThird" id="cboNumberThird">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                </section>
+                <p 
+                  id="password-message" 
+                  class="password-message">
+                </p>
+                <button 
+                  type="button" 
+                  id="btnPassword" 
+                  class="btn-password"
+                  onclick="verifyPass()">
+                 
+                 Verifica
+                </button>
+            </section>
+         </section>
+</div>
+<script src="./assets/js/script.js"></script>
+</body>
+</html>
