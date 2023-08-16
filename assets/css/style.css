@@ -36,13 +36,17 @@ body{
 .btn-sticker, .btn-password {
     padding: 10px;
     font-weight: 600 ;
-    margin: 15px;
+    margin: 10px;
 }
 
 .password {
-    margin-top: 10px;
+    margin: 10px;
 }
 select {
     padding: 10px;
        
+}
+.password-message {
+    height: 25px;
+    padding: 5px;
 }
