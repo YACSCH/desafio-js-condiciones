@@ -12,7 +12,25 @@ function ShowBorder() {
   }
   BorderVisible = !BorderVisible;
 }
+function sumAmountStickers() {
+  let htmlValue= document.getElementById("txtinputhtml").value
+  let cssValue  = document.getElementById("txtinputcss").value
+  let jsValue = document.getElementById("txtinputjs").value
+  let messagge = document.getElementById("result-sticker")
 
+  const sumNumber = Number(htmlValue) +  Number(cssValue) +  Number(jsValue)
+
+  if (sumNumber <= 10 ){ 
+      messagge.innerHTML = `Llevas ${sumNumber} stickers`
+  }
+  else{
+    messagge.innerHTML = "Llevas demasiados stickers"
+  }
+
+
+
+
+}
 function verifyPass(){
   let cbofirst = document.getElementById("cboNumberFirst").value
   let cboSecond = document.getElementById("cboNumberSecond").value
