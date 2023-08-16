@@ -46,7 +46,8 @@ select {
     padding: 10px;
        
 }
-.password-message {
-    height: 25px;
+.password-message, .result-sticker {
+    height: 30px;
     padding: 5px;
+    
 }
