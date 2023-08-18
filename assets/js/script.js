@@ -5,13 +5,13 @@ let BorderVisible = false;
 function ShowBorder() {
   if (BorderVisible) {
     clickableImage.style.border = "none";
-    console.log("sin borde");
   } else {
     clickableImage.style.border = "2px solid red";
-    console.log("con borde");
   }
   BorderVisible = !BorderVisible;
 }
+
+
 function sumAmountStickers() {
   let htmlValue= document.getElementById("txtinputhtml").value
   let cssValue  = document.getElementById("txtinputcss").value
@@ -26,11 +26,9 @@ function sumAmountStickers() {
   else{
     messagge.innerHTML = "Llevas demasiados stickers"
   }
-
-
-
-
 }
+
+
 function verifyPass(){
   let cbofirst = document.getElementById("cboNumberFirst").value
   let cboSecond = document.getElementById("cboNumberSecond").value
